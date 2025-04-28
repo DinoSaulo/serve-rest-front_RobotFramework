@@ -1,5 +1,11 @@
 # serve-rest-front_RobotFramework
 
+## Instalar as dependências
+```bash
 pip install -r requirements.txt
+```
 
-robot -d tests/ .\tests\login.robot
+## Executar os testes
+```bash
+robot -d results/ .\tests\login.robot
+```
