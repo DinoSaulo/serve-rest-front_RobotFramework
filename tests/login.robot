@@ -1,5 +1,6 @@
 *** Settings ***
-Resource  ../resources/keywords/HomePageKeywords.resource
+Resource  ../resources/variables.resource
+Resource  ../resources/settings.resource
 Library  FakerLibrary
 
 *** Variables ***
@@ -20,11 +21,5 @@ Cadastrar um novo usuário e validar mensagem
 Login com sucesso ao cadastrar um usuário
     Abrir o navegador
     Ir para o site Serve Rest Front
-    Preencher os dados do novo usuário e cadastrar
+    Preencher os dados do novo usuário e cadastrar um administrador
     Conferir usuário cadastrado com sucesso
-
-Validar opções da navbar
-    Abrir o navegador
-    Ir para o site Serve Rest Front
-    Preencher os dados do novo usuário e cadastrar
-    Conferir que é possível vizualizar as opções "Home", "Cadastrar Usuários", "Listar Usuários", "Cadastrar Produtos", "Listar Produtos" e "Relatórios"
